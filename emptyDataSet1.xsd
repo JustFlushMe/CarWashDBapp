@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="emptyDataSet1" targetNamespace="http://tempuri.org/emptyDataSet1.xsd" xmlns:mstns="http://tempuri.org/emptyDataSet1.xsd" xmlns="http://tempuri.org/emptyDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="emptyConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="emptyConnectionString (Settings)" PropertyReference="ApplicationSettings.WASH_SOME.Properties.Settings.GlobalReference.Default.emptyConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BonusProgTableAdapter" GeneratorDataComponentClassName="BonusProgTableAdapter" Name="BonusProg" UserDataComponentName="BonusProgTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="emptyConnectionString (Settings)" DbObjectName="BonusProg" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT bp_id FROM BonusProg</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="bp_id" DataSetColumn="bp_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="emptyDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="emptyDataSet1" msprop:Generator_UserDSName="emptyDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BonusProg" msprop:Generator_TableClassName="BonusProgDataTable" msprop:Generator_TableVarName="tableBonusProg" msprop:Generator_TablePropName="BonusProg" msprop:Generator_RowDeletingName="BonusProgRowDeleting" msprop:Generator_RowChangingName="BonusProgRowChanging" msprop:Generator_RowEvHandlerName="BonusProgRowChangeEventHandler" msprop:Generator_RowDeletedName="BonusProgRowDeleted" msprop:Generator_UserTableName="BonusProg" msprop:Generator_RowChangedName="BonusProgRowChanged" msprop:Generator_RowEvArgName="BonusProgRowChangeEvent" msprop:Generator_RowClassName="BonusProgRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bp_id" msprop:Generator_ColumnVarNameInTable="columnbp_id" msprop:Generator_ColumnPropNameInRow="bp_id" msprop:Generator_ColumnPropNameInTable="bp_idColumn" msprop:Generator_UserColumnName="bp_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
